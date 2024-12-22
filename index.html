@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="description" content="Webplix offers a wide variety of possibilities to make websites and softwares. Visit our website for more details">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="Webplix">
+    <meta property="og:description" content="We make website and chatbot">
+    <meta property="og:image" content="https://webplix.github.io/WebplixProfile.jpg">
+    <meta property="og:url" content="https://webplix.github.io/">
+    <script src="links.js"></script>
+    <script src="match.js"></script>
+    <script src="response.js"></script>
+    <script src="scroll.js"></script>
+    <script src="secure.js"></script>
+    <script src="startup.js"></script>
+    <script src="unknownresponse.js"></script>
+    <script src="processInput.js"></script>
+    <script src="defrag.js"></script>
+    <script src="outputhandling.js"></script>
+    <script src="misc.js"></script>
+    <title>Webplix Mockup Website</title>
+    <link rel="icon" type="image/png" href="WebplixLogoTransparent.png" />
+    <link rel="stylesheet" type="text/css" href="indexstyle.css">
+</head>
+<html>
+
+<body onload="con();">
+
+    <noscript>
+        <h1 class="center-h" style="color:white;">Please allow this page to use JavaScript to use our service or your
+            browser may be incompatible with our page</h1>
+    </noscript>
+
+    <div id="every-display">
+
+        <div tite="Go to ASPIRE Website, Aspire Business and Career Consultant" id="fixed-ads" onclick="handleAdClick(event)">
+            <span class="close-ad" onclick="closefixedad(event);">✖</span>
+        </div>
+
+        <div id="menu-buttons">
+            <div class="general-flexer-row center-all" id="halfwidth">
+                <a title="Website Templates we make" href="templates/"
+                    class="general-flex-item header3 menu-padding">Templates</a>
+                <a title="About Us, Additional Services, etc..." href="more.html"
+                    class="general-flex-item header3 menu-padding">More</a>
+                <a title="Webplix Legal Documentation" href="Webplix_Legal_Documentation.pdf" target="_blank"
+                    class="general-flex-item header3 menu-padding">Legal</a>
+                <a title="DTI Registered Permit"
+                    href="https://bnrs.dti.gov.ph/search?keyword2=&keyword=webplix+web+development+services&criteria=exact&sort_by=business_name&sort_order=asc"
+                    target="_blank" class="general-flex-item header3 menu-padding">DTI</a>
+            </div>
+        </div>
+
+        <div id="menu-icon" onclick="showmenu();">
+            ☰
+        </div>
+
+        <div id="menu-cp">
+            <br><br>
+            <div class="general-flexer-column" id="menu-buttons-cp">
+                <div onclick="hidemenu();" class="general-flex-item menu-buttons cursor-pointer">
+                    <span>Close Menu</span>
+                </div>
+                <br><br>
+                <div class="general-flexer-column center-all">
+                    <a title="Website Templates we make" href="templates/"
+                        class="general-flex-item header3 menu-padding"><span>Templates</span></a><br>
+                    <a title="About Us, Additional Services, etc..." href="more.html"
+                        class="general-flex-item header3 menu-padding"><span>More</span></a><br>
+                    <a title="Webplix Legal Documentation" href="Webplix_Legal_Documentation.pdf" target="_blank"
+                        class="general-flex-item header3 menu-padding"><span>Legal</span></a><br>
+                    <a title="DTI Registered Permit"
+                        href="https://bnrs.dti.gov.ph/search?keyword2=&keyword=webplix+web+development+services&criteria=exact&sort_by=business_name&sort_order=asc"
+                        target="_blank" class="general-flex-item header3 menu-padding"><span>DTI</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="container">
+            <div id="pic-with-dark-bg">
+                <div class="general-flexer-row center-all an-responsive-intro">
+                    <div class="general-flex-item">
+                        <img alt="Webplix Logo" id="logo-main-focus" class="fixed-size-image"
+                            src="WebplixLogoTransparent.png">
+                    </div>
+                    <div class="general-flex-item" id="inquiry">
+                        <h1 class="header1 an-responsive-general-center-h">Webplix</h1>
+                        <h1 class="header3 an-responsive-general-center-h">Website and Software Development Service</h1>
+                        <div class="an-responsive-general-center-h">
+                            <button onclick="goto(facebookPage)" id="inquire-button">INQUIRE NOW!</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="offers-area">
+                <div class="general-flexer-row an-responsive">
+                    <div class="center-h general-flex-item animate-delay an-responsive" delay="0.2">
+                        <h1 class="thick header3">Customization</h1>
+                        <h1 class="not-full header3">
+                            We customizes software and websites that aligns with our client's interest
+                        </h1>
+                    </div>
+                    <div class="center-h general-flex-item animate-delay an-responsive" delay="0.5">
+                        <h1 class="thick header3">Commitment</h1>
+                        <h1 class="not-full header3">
+                            We are committed to not just make software but also help businesses and people
+                        </h1>
+                    </div>
+                    <div class="center-h general-flex-item animate-delay an-responsive" delay="0.8">
+                        <h1 class="thick header3">Support</h1>
+                        <h1 class="not-full header3">
+                            We offer our fullest and extended support
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chatbot area-->
+            <div id="chatbot" class="header3">
+                <h1 class="header1 center-h">Ask our chatbot:</h1>
+                <div id="ChatOutput" class="header3 justified-text"></div>
+                <div class="center-h">
+                    <input class="header3" type="text" id="chatbox" placeholder="Enter a message..." autofocus required
+                        autocomplete="off">
+                    <button class="header3 chatbot-button" onclick="send_and_write();">Send</button>
+
+                    <div id="chatbuttonpcmode">
+                        <div class="general-flexer-row">
+                            <div class="general-flex-item">
+                                <button onclick="fixed_send_and_write('About Us Contact Us');"
+                                    class="header3 cover-wide-button chatbot-button">About | Contact Us</button>
+                            </div>
+                            <div class="general-flex-item">
+                                <button onclick="fixed_send_and_write('Copyright Notice');"
+                                    class="header3 cover-wide-button chatbot-button">Copyright Notice</button>
+                            </div>
+                            <div class="general-flex-item">
+                                <button onclick="fixed_send_and_write('Privacy Policy');"
+                                    class="header3 cover-wide-button chatbot-button">Privacy Policy</button>
+                            </div>
+                            <div class="general-flex-item">
+                                <button onclick="fixed_send_and_write('FAQ');"
+                                    class="header3 cover-wide-button chatbot-button">FAQ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="chatbuttoncpmode">
+                        <div class="general-flexer-row">
+                            <div class="general-flex-item">
+                                <button onclick="fixed_send_and_write('About Us Contact Us');"
+                                    class="header3 cover-wide-button chatbot-button">About | Contact Us</button>
+                            </div>
+                            <div class="general-flex-item">
+                                <button onclick="fixed_send_and_write('Copyright Notice');"
+                                    class="header3 cover-wide-button chatbot-button">Copyright Notice</button>
+                            </div>
+                        </div>
+
+                        <div class="general-flexer-row">
+                            <div class="general-flex-item">
+                                <button onclick="fixed_send_and_write('Privacy Policy');"
+                                    class="header3 cover-wide-button chatbot-button">Privacy Policy</button>
+                            </div>
+                            <div class="general-flex-item">
+                                <button onclick="fixed_send_and_write('FAQ');"
+                                    class="header3 cover-wide-button chatbot-button">FAQ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="whatiswebplix">
+                <div class="general-flexer-row an-general-responsive-flex-column">
+                    <div class="general-flex-item sub-info-area">
+                        <h1 class="header1 more-info-text1">What is Webplix?</h1>
+                        <h1 class="header3 more-info-text1">Webplix is a service based on Philippines that makes
+                            websites
+                            for
+                            business,
+                            personal,
+                            commercial,
+                            portfolio,
+                            blog,
+                            or any other type of website
+							and various kind of softwares</h1>
+                        <br>
+                        <a href="more.html" class="header1 more-info-text3"><u>About Us</u></a>
+                    </div>
+                    <div class="general-flex-item center-all"><br>
+                        <img alt="Webplix Infographic Logo" src="infographiclogo.jpg"
+                            class="more-info-area-pictures more-info-text1">
+                        <h1 class="header2 more-info-text1">Website and Software Development Service</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div id="whywebplix">
+                <div class="general-flexer-row an-general-responsive-flex-column">
+                    <div class="general-flex-item center-all">
+                        <img alt="Webplix Templates" src="templatelogo.jpg"
+                            class="more-info-area-pictures more-info-text2">
+                        <h1 class="header2 more-info-text2">Responsive, Templates, and Designs</h1>
+                    </div>
+                    <div class="general-flex-item sub-info-area"><br>
+                        <h1 class="header1 more-info-text2">Why choose Webplix?</h1>
+                        <h1 class="header3 more-info-text2">Webplix developer communicates directly with the client to
+                            make
+                            website and it
+                            gives
+                            client more control on their websites apperance and functionalities</h1>
+                        <br>
+                        <a href="templates/" class="header1 more-info-text2"><u>Browse Templates</u></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="howtoinquire">
+                <div class="general-flexer-row an-general-responsive-flex-column">
+                    <div class="general-flex-item sub-info-area">
+                        <h1 class="header1 more-info-text3">How to inquire / make website?</h1>
+                        <h1 class="header3 more-info-text3">Just tell us what your website would look like and we got
+                            the
+                            rest through our facebook page.</h1>
+                        <br>
+                        <a href="https://facebook.com/websiteplix/" class="header1 more-info-text3"><u>Inquire
+                                Now!</u></a>
+                    </div>
+                    <div class="general-flex-item center-all"><br>
+                        <img alt="Webplix Customer Service" src="supportlogo.jpg"
+                            class="more-info-area-pictures more-info-text3">
+                        <h1 class="header2 more-info-text3">Communicate Directly</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div id="bot-features">
+                <h1 class="header1">Chatbot Features:</h1>
+                <br>
+
+                <h1 class="header2">No External API</h1>
+                <h1 class="header3">Elevate your website's user experience to new heights with a chatbot that operates
+                    independently, without relying on external APIs. Unlike traditional chatbots that might experience
+                    downtime due to external API disruptions, your website's chatbot ensures uninterrupted engagement
+                    with
+                    visitors. This self-sufficiency empowers the chatbot to provide instant responses and information
+                    without external dependencies, making interactions seamless and hassle-free.</h1>
+                <br>
+
+                <h1 class="header2">Continuous Monitoring and Maintenance</h1>
+                <h1 class="header3">Experience a chatbot that's always at its best with our Continuous Monitoring and
+                    Maintenance feature. We understand the importance of a flawless user experience, which is why our
+                    chatbot undergoes constant surveillance and upkeep. Our dedicated team ensures that the chatbot
+                    remains
+                    finely tuned, responsive, and up-to-date, eliminating any glitches or hiccups that might arise. From
+                    performance enhancements to prompt issue resolution, our commitment to continuous improvement
+                    guarantees
+                    that your website's chatbot consistently delivers top-notch interactions. Rest easy knowing that our
+                    chatbot is tirelessly working behind the scenes to provide your users with a smooth and delightful
+                    journey.</h1>
+                <br>
+
+                <h1 class="header2">Latest Information</h1>
+                <h1 class="header3">Experience a chatbot that's always in sync with the times, thanks to our innovative
+                    feature: Manual Developer Updates. With this capability, our dedicated developers keep your chatbot
+                    up
+                    to date by manually injecting the latest information, ensuring that your users have access to the
+                    most
+                    current and accurate details. Whether it's news articles, product releases, or essential
+                    announcements,
+                    our developers meticulously curate and integrate the latest content into the chatbot's knowledge
+                    base.
+                    This hands-on approach guarantees that your users are consistently provided with up-to-the-minute
+                    information, creating a seamless and informed user experience. Trust in our developer-driven updates
+                    to
+                    keep your chatbot at the forefront of knowledge and relevance.</h1>
+                <br>
+
+                <h1 class="header2">Instant Response</h1>
+                <h1 class="header3">Captivate and retain your website's audience with a chatbot that delivers instant
+                    responses. Visitors will appreciate the dynamic and real-time interactions that simulate genuine
+                    human
+                    conversation. Whether it's addressing inquiries, providing recommendations, or guiding users through
+                    your website's offerings, the chatbot's rapid responses keep visitors engaged and ensure that they
+                    find
+                    the information they seek without delay.</h1>
+                <br>
+
+                <h1 class="header2">Fully Customizable</h1>
+                <h1 class="header3">Give your website a unique touch by integrating a fully customizable chatbot that
+                    aligns
+                    with your brand's identity and user needs. Tailor the chatbot's appearance, language, and
+                    functionality
+                    to resonate with your website's style and purpose. This customization allows you to create a chatbot
+                    that seamlessly fits into your website's design and provides a personalized experience for every
+                    visitor. Whether it's offering specific product information or assisting with customer support, the
+                    chatbot adapts to fulfill your website's distinct objectives.</h1>
+            </div>
+
+            <div id="footer">
+                <a class="header3" target="_blank" href="mailto:webplix.ph@gmail.com">Email</a> |
+                <a class="header3" target="_blank" href="https://facebook.com/websiteplix">Facebook</a> |
+                <a class="header3" target="_blank" href="https://www.freelancer.com/u/Webplix">Freelancer</a> |
+                <a class="header3" target="_blank" href="https://www.linkedin.com/in/webplix-web-development-services-06915728a/">Linkedin</a>
+                <br>
+                <a class="header3 a-no-design">Image Copyright: All images on this website are original creations,
+                    handcrafted by us and not sourced from the internet.</a><br>
+                <br>
+                <a class="header3 a-no-design">Webplix Founder: Khian Victory D. Calderon</a>
+                <br>
+                <br>
+                <a class="header3 a-no-design">2023 All rights reserved.</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

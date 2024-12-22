@@ -1,0 +1,801 @@
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        font-size: 15pt;
+        font-family: Lucida Fax;
+        overflow-x: hidden;
+        background:#171717;
+        color:white;
+    }
+
+    #fixed-ads {
+        display:none;
+        position: fixed;
+        bottom: 2vh;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        padding: 1%;
+        width: 80%;
+        height: 30px;
+        background-image: url("https://aspirewebplix.github.io/AspireCover.png");
+        background-size: cover;
+        background-position: center 48%;
+        border-top: 1px solid #ddd;
+        text-align: center;
+        font-size: 14px;
+        color: #333;
+        border: solid 1px black;
+        box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        z-index:10;
+        cursor:pointer;
+    }
+    
+    .close-ad {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        margin-top:-0.7%;
+        margin-right:-0.3%;
+        font-size: 15pt;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    #every-display {
+        display:none;
+    }
+
+    #cover-photo-logo {
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        border: 0;
+        position: relative;
+    }
+
+    #footer {
+        background:#242323;
+        height: auto;
+        text-align: center;
+        padding:2%;
+        line-height:1.5;
+    }
+
+    #footer a {
+        text-decoration:none;
+    }
+
+    .a-no-design {
+        color:white;
+        text-decoration:none;
+    }
+
+    .footer-row {
+        margin: auto;
+        width: 90%;
+        display: flex;
+    }
+
+    .footer-column {
+        flex: 1;
+        padding: 1%;
+    }
+
+    .general-flexer-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .general-flexer-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .general-flex-item {
+        flex: 1;
+    }
+
+    #pic-with-dark-bg {
+        background: #171717;
+        margin: 0;
+        width: 100%;
+        position: relative;
+        box-sizing: border-box;
+        border: 0;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1%;
+    }
+
+    .fixed-size-image {
+        width: 100%;
+        margin: 0;
+    }
+
+    div {
+        margin: 0;
+    }
+
+    #container {
+        flex-direction: column;
+        width:100%;
+    }
+
+    #logo-main-focus {
+        animation: webplixPicAnimation 1s ease-out;
+        width: 60%;
+        height: auto;
+    }
+
+    .center-all {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media (max-width: 768px) {
+        .header1 {
+            font-size: 25px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .header1 {
+            font-size: 40px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .header2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .header2 {
+            font-size: 30px;
+            font-weight: normal;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .header3 {
+            font-size: 15px;
+            font-weight: normal;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .header3 {
+            font-size: 20px;
+            font-weight: normal;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .header4 {
+            font-size: 15px;
+            font-weight: normal;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .header4 {
+            font-size: 10px;
+            font-weight: normal;
+        }
+    }
+
+    @media (max-width: 768px) {
+        #inquire-button {
+            font-size: 15px;
+            font-weight: normal;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        #inquire-button {
+            font-size: 20px;
+        }
+    }
+
+    #inquire-button {
+		line-height:3;
+		border:solid;
+        border-radius: 25px;
+        background: #242323;
+        color: white;
+        cursor: pointer;
+		text-decoration:none;
+        font-family:Lucida Fax;
+    
+        transition: 0.5s;
+    }
+
+    #menu-cp {
+        z-index:7;
+        display:none;
+        position:fixed;
+        left:-300px;
+        background:#242323;
+        color:white;
+        height:100vh;
+        text-align: center;
+        width:180px;
+        transition: left 0.5s ease-in-out;
+    }
+
+    #menu-cp span, #menu-cp a {
+        font-size:15pt;
+        color:white;
+        margin:2%;
+        text-decoration:none;
+    }
+    
+    #menu-icon {
+        display:none;
+        position:fixed;
+        left:2vw;
+        top:2vh;
+        font-weight:bold;
+        color:white;
+        font-size:30pt;
+        cursor:pointer;
+    }
+
+    #inquire-button:hover, #inquire-button:active{
+        background: #404040;
+        transform: translateY(-10px);
+    }
+
+    .center-h {
+        text-align: center;
+    }
+
+    #offers-area {
+        padding: 1% 1% 5% 1%;
+		color:white;
+    }
+
+    .underline {
+        border: solid;
+        border-radius: 15px;
+        width: 60%;
+        margin-top: 0;
+    }
+
+    .not-full {
+        margin: auto;
+    }
+
+    .border-solid {
+        border: solid;
+    }
+
+    .thick {
+        font-weight: bold;
+    }
+
+    #more-info {
+        padding: 4%;
+    }
+
+    #additional-service {
+        text-align: right;
+        padding: 4%;
+    }
+
+    .round-border {
+        border: solid;
+        border-radius: 30px;
+        padding: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: hidden;
+        background: #044C6D;
+    }
+
+    .round-border:hover {
+        background-color: #EBF6F7;
+        color: black;
+        transition: 0.5s;
+    }
+
+    .chatbot-button:hover {
+        cursor: pointer;
+        filter: invert(100%);
+    }
+
+    #menu-buttons {
+       text-align:center;
+       padding: 1%;
+       position: sticky;
+       top: 0;
+       z-index:2;
+       background:#242323;
+       word-spacing:5px;
+       width:100vw;
+    }
+
+    #halfwidth {
+        margin:auto;
+        width:30%;
+    }
+
+    .menu-padding {
+        padding-left:5%;
+        padding-right:5%;
+        transition:0.5s;
+    }
+
+    .menu-padding:hover {
+       padding:3%;
+       background-color:#404040;
+    }
+
+    .resize-with-color {
+        transition: 0.5s;
+        padding:2%;
+    }
+
+    .resize-with-color:focus-visible, .resize-with-color:hover {
+        padding-top:5%;
+        padding-bottom:5%;
+        background:#242323;
+    }
+
+    #chatbuttoncpmode {
+        display:none;
+    }
+
+    .more-info-area-pictures {
+        align-items:center;
+        width:30vw;
+        height:auto;
+        border:solid 50px #6BACBF;
+    }
+
+    @media only screen and (max-width: 768px) {
+        #chatbuttoncpmode {
+            display:block;
+        }
+        #chatbuttonpcmode {
+            display:none;
+        }
+      }
+
+    @media only screen and (max-width: 768px) {
+        .an-responsive {
+          text-align:left;
+          padding:2%;
+          flex-direction: column;
+        }
+      }
+
+    @media only screen and (max-width: 768px) {
+        #menu-buttons {
+          padding-top:3%;
+          padding-bottom:3%;
+        }
+      }
+
+    @media only screen and (max-width: 768px) {
+        .an-responsive-intro {
+          text-align:center;
+          padding:2%;
+          flex-direction: column;
+        }
+      }
+
+    @media only screen and (max-width: 768px) {
+        .an-responsive-general-center-h {
+          text-align:center;
+        }
+      }
+      
+    #whatiswebplix {
+        background:white;
+        color:#171717;
+        padding:5%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin:auto;
+    }
+
+    #whywebplix {
+        padding:5%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin:auto;
+    }
+
+    #howtoinquire {
+        background:white;
+        color:#171717;
+        padding:5%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin:auto;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .an-general-responsive-flex-column {
+            flex-direction:column;
+        }
+        .sub-info-area {
+            padding-top:0 !important;
+        }
+        .more-info-area-pictures {
+            width:80vw;
+            height:auto;
+            border:solid 10px #6BACBF;
+        }
+      }
+
+    .sub-info-area {
+        padding-top:15%;
+    }
+
+    #menu-buttons a{
+        text-decoration:none;
+        font-weight:normal;
+        color:white;
+        cursor:pointer;
+    }
+
+    .more-hr {
+        width:90%;
+        margin:auto;
+    }
+
+    .limiter {
+        width:90%;
+    }
+
+    .more-info-design {
+        padding-left:4%;
+        padding-top:1%;
+        padding-bottom:1%;
+        margin:auto;
+    }
+
+    .whole-padding {
+        padding:1%;
+        text-align:justify;
+        width:90%;
+    }
+
+    .chatbot-button {
+        border-radius: 25px;
+        padding: 1%;
+        background: #404040;
+        color: white;
+        font-family: Lucida Fax;
+        margin: 1%;
+        transition: 0.5s;
+    }
+
+    #inquiry {
+        text-align:left;
+        animation: webplixInquiryAreaAnimation 1s ease-out;
+    }
+
+    input {
+        font-family: Lucida Fax;
+        width: 73%;
+        border-radius: 25px;
+        padding: 1%;
+        background: #404040;
+        color: white;
+    }
+
+    .cover-wide-button {
+        width: 80%;
+    }
+
+    #chatbot {
+        background:#242323;
+        padding-bottom: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        overflow-y: auto;
+    }
+
+    #ChatOutput {
+        padding: 2%;
+        width: 80%;
+        margin: auto;
+        line-height: 1.5;
+        overflow-y: scroll;
+        height: 40vh;
+        border: solid;
+        border-radius: 25px;
+    }
+	
+	a {
+	color: #1E90FF;
+	font-weight:bold;
+	text-decoration:underline;
+	}
+	
+	.no-design-a {
+        text-decoration: none;
+    }
+	
+	ul {
+	margin:0;
+	clear: both;
+	}
+	.user {
+      color: #00b840;
+    }
+
+    .bot {
+      color: #8a04d1;
+    }
+	
+	#project-samples {
+		padding:1%;
+	}
+	
+	.design-box {
+		border:solid;
+		border-radius:25px;
+		border-width:5px;
+		margin:2%;
+	}
+	
+	#project-samples button {
+		background: #044C6D;
+        color:white;
+        text-decoration:none;
+        border:none;
+        border-radius:25px;
+        padding:2%;
+        width:80%;
+        cursor:pointer;
+        font-family:Lucida Fax;
+
+        transition:0.5s;
+	}
+
+    #project-samples button:hover {
+       background:#68A4BC;
+       color:black;
+       transform:translateY(-15px);
+    }
+	
+    .spacer {
+        padding:1%;
+        margin:auto;
+    }
+
+	.design-box:hover {
+		color:white;
+		background:#044C6D;
+		transition:0.5s;
+	}
+
+    .justified-text {
+        text-align: justify;
+        margin: 0 auto;
+    }
+
+    .footer-links {
+        color:purple;
+    }
+
+    .left-templates {
+        animation: leftTemplatesAnimation 1s ease-out;
+    }
+
+    .right-templates {
+        animation: rightTemplatesAnimation 1s ease-out;
+    }
+
+    .sample-template-text {
+        animation: sampleTemplateTextAnimation 1s ease-out;
+    }
+
+    .animate-delay {
+        transition: 0.5s;
+        opacity:0;
+    }
+
+    .animate-delay:hover {
+        padding-top:2%;
+        padding-bottom:2%;
+        margin-bottom:3%;
+        background:#242323;
+    }
+
+    .more-info-text1 {
+       animation: moreText1Animation 2s ease-out;
+    }
+
+    .more-info-text2 {
+        animation: moreText2Animation 2s ease-out;
+     }
+
+    .more-info-text3 {
+        animation: moreText3Animation 2s ease-out;
+     }
+
+    @keyframes moreText1Animation {
+        0% {
+           transform: translateX(-50px);
+           opacity:0;
+        }
+        60% {
+           transform: translateX(0px);
+           opacity:1;
+        }
+    }
+
+    @keyframes moreText2Animation {
+        0% {
+           transform: translateX(-50px);
+           opacity:0;
+        }
+        80% {
+           transform: translateX(0px);
+           opacity:1;
+        }
+    }
+
+    @keyframes moreText3Animation {
+        0% {
+           transform: translateX(-50px);
+           opacity:0;
+        }
+        100% {
+           transform: translateX(0px);
+           opacity:1;
+        }
+    }
+
+    @keyframes webplixOfferListsTextAnimation {
+        from {
+           transform: translateY(-50px);
+           opacity:0;
+        }
+        to {
+           transform: translateY(0px);
+           opacity:1;
+        }
+    }
+
+    @keyframes sampleTemplateTextAnimation {
+        from {
+           transform: translateY(-50px);
+           opacity:0;
+        }
+        to {
+           transform: translateY(0px);
+           opacity:1;
+        }
+    }
+
+    @keyframes leftTemplatesAnimation {
+        from {
+           transform: translateX(-50px);
+           opacity:0;
+        }
+        to {
+           transform: translateX(0px);
+           opacity:1;
+        }
+    }
+
+    @keyframes rightTemplatesAnimation {
+        from {
+           transform: translateX(50px);
+           opacity:0;
+        }
+        to {
+           transform: translateX(0px);
+           opacity:1;
+        }
+    }
+
+    @keyframes webplixPicAnimation {
+        from {
+           transform: translateX(-100px);
+           opacity:0;
+        }
+        to {
+           transform: translateX(0px);
+           opacity:1;
+        }
+    }
+
+    @keyframes webplixInquiryAreaAnimation {
+        from {
+           transform: translateX(50px);
+           opacity:0;
+        }
+        to {
+           transform: translateX(0px);
+           opacity:1;
+        }
+    }
+
+    #bot-features {
+        text-align:left;
+        padding:4%;
+        border-radius:25px;
+    }
+
+    .generalSlideLeftwithVisibility {
+        animation:generalSlideLeftwithVisibility 0.5s ease-out;
+    }
+
+    @keyframes generalSlideLeftwithVisibility {
+        from {
+            opacity:0;
+            transform:translateX(-50px);
+        }
+        to {
+            transform:translateX(0px);
+            opacity:1;
+        }
+    }
+
+    .lighter-bg {
+        background:#242323;
+    }
+
+    .padding-2p {
+        padding:2%;
+    }
+
+    .cursor-pointer:hover {
+        cursor:pointer;
+    }
+
+    .generalSlideLeft-delay {
+        transition:0.5s;
+        opacity:0;
+    }
+
+    .generalSlideLeft-delay:hover {
+        filter: brightness(130%);
+        padding-top:4%;
+        padding-bottom:4%;
+    }
+
+    .template-picture {
+        width:30%;
+        height:auto;
+    }
+
+    @media only screen and (max-width: 768px) {
+        #menu-buttons {
+            display:none;
+        }
+        #menu-icon {
+            display:block;
+            z-index:5;
+        }
+        #menu-cp {
+            display:block;
+        }
+        .close-ad {
+            font-size:10pt;
+            margin-top:-3%;
+            margin-right:-2%;
+        }
+    }

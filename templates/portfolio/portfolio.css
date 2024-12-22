@@ -1,0 +1,92 @@
+body {
+    color:white;
+    background:black;
+    font-family:Times New Roman;
+}
+
+#container {
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    padding:4%;
+    margin:3%;
+    border-radius:15px;
+}
+
+#profile-pic {
+    width:70%;
+    height:auto;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+}
+
+a {
+    color:purple;
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+/*
+Below are general items
+*/
+.left {
+    text-align:left;
+    justify-content:left;
+}
+
+.right {
+    text-align:right;
+    justify-content:right;
+}
+
+.center-h {
+    text-align:center;
+}
+
+.center-all {
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+}
+
+.cursor-pointer {
+    cursor:pointer;
+}
+
+.general-flexer-row {
+    display:flex;
+    flex-direction:row;
+}
+
+.general-flexer-column {
+    display:flex;
+    flex-direction:column;
+}
+
+.general-flex-item {
+    flex:1;
+}
+
+@media (min-width: 769px) {
+    .font1 {
+        font-size:70px;
+    }
+    .font2 {
+        font-size:30px;
+    }
+    .font3 {
+        font-size:23px;
+    }
+}
+
+@media (max-width: 768px) {
+    .font1 {
+        font-size: 50px;
+    }
+    .font2 {
+        font-size: 20px;
+    }
+    .font3 {
+        font-size: 16px;
+    }
+}

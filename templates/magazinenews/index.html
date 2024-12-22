@@ -1,0 +1,198 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Magazine & News Template</title>
+        <script src="magazinenews.js"></script>
+        <link rel="icon" type="image/png" href="../../WebplixLogoTransparent.png" />
+        <link rel="stylesheet" type="text/css" href="magazinenews.css">
+    </head>
+    <body onload="NoAds();">
+
+        <div id="menu" class="general-flexer-row">
+            <div class="general-flexer-row" id="menu-buttons">
+                <div onclick="goHome();" class="general-flex-item menu-buttons cursor-pointer">
+                   <span class="font4">Home</span>
+                </div>
+                <div onclick="dummyButton();" class="general-flex-item menu-buttons cursor-pointer">
+                    <span class="font4">About</span>
+                </div>
+                <div onclick="dummyButton();" class="general-flex-item menu-buttons cursor-pointer">
+                    <span class="font4">News</span>
+                </div>
+                <div onclick="dummyButton();" class="general-flex-item menu-buttons cursor-pointer">
+                    <span class="font4">Conference</span>
+                 </div>
+                 <div onclick="dummyButton();" class="general-flex-item menu-buttons cursor-pointer">
+                    <span class="font4">Source</span>
+                 </div>
+                 <div onclick="dummyButton();" class="general-flex-item menu-buttons cursor-pointer">
+                    <span class="font4">Live</span>
+                 </div>
+                 <div onclick="dummyButton();" class="general-flex-item menu-buttons cursor-pointer">
+                    <span class="font4">Trending</span>
+                 </div>
+            </div>
+        </div>
+
+        <div id="menu-icon" onclick="showmenu();">
+            ☰
+        </div>
+
+        <div id="menu-cp">
+            <br><br>
+        <div class="general-flexer-column" id="menu-buttons-cp">
+            <div onclick="goHome();" class="general-flex-item menu-buttons cursor-pointer">
+                <span>Home</span>
+             </div>
+             <div onclick="hidemenu();" class="general-flex-item menu-buttons cursor-pointer">
+                <span>Close Menu</span>
+            </div>
+            <br><br>
+             <div onclick="dummyButton();" class="general-flex-item menu-buttons cursor-pointer">
+                 <span>About</span>
+             </div>
+             <div onclick="dummyButton();" class="general-flex-item menu-buttons cursor-pointer">
+                 <span>News</span>
+             </div>
+             <div onclick="dummyButton();" class="general-flex-item menu-buttons cursor-pointer">
+                 <span>Conference</span>
+              </div>
+              <div onclick="dummyButton();" class="general-flex-item menu-buttons cursor-pointer">
+                 <span>Source</span>
+              </div>
+              <div onclick="dummyButton();" class="general-flex-item menu-buttons cursor-pointer">
+                 <span>Live</span>
+              </div>
+              <div onclick="dummyButton();" class="general-flex-item menu-buttons cursor-pointer">
+                 <span>Trending</span>
+              </div>
+            </div>
+       </div>
+
+        <div id="container">
+            <div id="headline">
+                  <img src="megajoules.png" id="main-pic" alt="Mega Joules Logo">
+                  <div id="sub-headline">
+                   <span class="font1">Welcome to Mega Joules</span><br>
+                   <span class="font2">Empowering News for a Dynamic World</span>
+                  </div>
+            </div>
+            <div id="top-stories">
+                <span class="font1 center-all">Top Stories</span>
+                <br>
+                <span class="font2">Energizing the Future: Global Renewable Trends</span><br>
+                <span class="font4">Stay updated on the latest breakthroughs in renewable energy sources, energy transition policies, and their impact on the planet.</span>
+                <br><br>
+                <span class="font2">Unleashing Innovation: Tech Disruptions in Energy Sector</span><br>
+                <span class="font4">Explore how cutting-edge technologies are revolutionizing the energy industry, from smart grids to energy storage solutions.</span>
+                <br><br>
+                <span class="font2">Power Profiles: Trailblazers in Sustainability</span><br>
+                <span class="font4">Meet the individuals and organizations at the forefront of sustainable practices, driving positive change for a cleaner, greener world.</span>
+             </div>
+             <div id="current-news">
+                <span class="font1 center-all">Current Affairs</span>
+                <br>
+                <span class="font2">Worldwatch: Global Energy Geopolitics</span><br>
+                <span class="font4">Analyze the intricate connections between politics, economics, and energy resources, shaping international relations.</span>
+                <br><br>
+                <span class="font2">Climate Chronicles: Navigating Environmental Challenges</span><br>
+                <span class="font4">Dive into the ongoing efforts to combat climate change, adaptation strategies, and stories of communities making a difference.</span>
+             </div>
+             <div id="business-finance">
+                <span class="font1 center-all">Business and Finance</span>
+                <br>
+                <span class="font2">Energy Markets Insight: Fueling Economic Growth</span><br>
+                <span class="font4">Gain insights into the dynamic energy markets, investment opportunities, and the economic implications of energy fluctuations.</span>
+                <br><br>
+                <span class="font2">Innovation Spotlight: Startups Shaping Energy's Future</span><br>
+                <span class="font4">Discover the startups and entrepreneurs driving innovation in the energy sector, and the potential disruptors on the horizon.</span>
+             </div>
+             <div id="lift-stye-sustain">
+                <span class="font1 center-all">Lifestyle & Sustainability</span>
+                <br>
+                <span class="font2">Green Living Guide: Sustainable Choices, Vibrant Life</span><br>
+                <span class="font4">Explore eco-friendly practices, from green homes and ethical fashion to conscious travel and zero-waste living.</span>
+                <br><br>
+                <span class="font2">Culinary Sustainability: Farm-to-Table Reimagined</span><br>
+                <span class="font4">Indulge in the fusion of gastronomy and sustainability, as we explore farm-to-table movements and conscious food choices.</span>
+             </div>
+             <div id="science">
+                <span class="font1 center-all">Science & Exploration</span>
+                <br>
+                <span class="font2">Beyond Earth: Interstellar Ambitions</span><br>
+                <span class="font4">Embark on a journey through space exploration, from Mars missions to the search for habitable exoplanets.</span>
+                <br><br>
+                <span class="font2">Innovations Unveiled: Science at the Quantum Level</span><br>
+                <span class="font4">Uncover the marvels of quantum science, its potential applications, and how it could reshape our technological landscape.</span>
+             </div>
+             <div id="analysis">
+                <span class="font1 center-all">Opinion & Analysis</span>
+                <br>
+                <span class="font2">Editorial Insights: Rethinking Energy Paradigms</span><br>
+                <span class="font4">Read thought-provoking editorials that challenge conventional energy wisdom and propose new perspectives.</span>
+                <br><br>
+                <span class="font2">Global Voices Forum: Diversity in Energy Discourse</span><br>
+                <span class="font4">A platform for voices from different cultures and backgrounds to share their insights on energy, sustainability, and more.</span>
+             </div>
+
+             <div id="other-news">
+                <span class="font1">Suggested News: </span>
+                <div id="news-display">
+                     <div onclick="dummyButton();" class="font1 general-flex-item suggested-news center-all">
+                        Suggested News 1
+                     </div>
+                     <div onclick="dummyButton();" class="font1 general-flex-item suggested-news center-all">
+                        Suggested News 2
+                     </div>
+                     <div onclick="dummyButton();" class="font1 general-flex-item suggested-news center-all">
+                        Suggested News 3
+                     </div>
+                </div>
+             </div>
+
+             <div id="stay-connected">
+                <span class="font1 center-all">Stay Connected</span>
+                <br>
+                <span class="font3">Follow us on social media for daily updates, interactive content, and engaging discussions.</span><br>
+                <span class="font3">Facebook: <a href="">facebook.com/MegaJoulesNews</a> (SAMPLE ONLY)</span><br>
+                <span class="font3">Twitter: <a href="">twitter.com/MegaJoulesNews</a> (SAMPLE ONLY)</span><br>
+                <span class="font3">Instagram: <a href="">instagram.com/megajoules.news</a> (SAMPLE ONLY)</span><br>
+                <br><br>
+                <span class="font3">Subscribe to our newsletter for a weekly dose of curated articles, insightful analyses, and the latest energy trends. Join us in championing a world powered by knowledge and sustainability.</span><br>
+                <br><br>
+                <span class="font3">For advertising inquiries, collaboration proposals, or to contribute, reach out to us at <a href="">contact@megajoulesnews.com</a> (SAMPLE ONLY)</span>
+            </div>
+            <div id="about-us">
+                <span class="font1 center-all">About Us</span>
+                <span class="font3">Mega Joules is your go-to destination for staying informed about the ever-evolving energy landscape. We believe in the power of knowledge to drive positive change and are dedicated to delivering engaging, accurate, and impactful news and stories.</span>
+                <br><br>
+                <span class="font1 center-all">Disclaimer:</span>
+                <span class="font3">This is a fictional example created for illustrative purposes only. Any resemblance to real websites or entities is purely coincidental.</span>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div id="footer-text">
+                 <span class="font4">
+                     <span class="footer-design-text" onclick="dummyButton();">Email</span> | 
+                     <span class="footer-design-text" onclick="dummyButton();">Contact Us</span> | 
+                     <span class="footer-design-text" onclick="dummyButton();">Privacy Policy</span> | 
+                     <span class="footer-design-text" onclick="dummyButton();">Terms and Conditions</span> |
+                     <span class="footer-design-text" onclick="dummyButton();">FAQ</span> |
+                     <span class="footer-design-text" onclick="dummyButton();">News Outelets</span> |
+                     <span class="footer-design-text" onclick="dummyButton();">References</span> |
+                     <span class="footer-design-text" onclick="dummyButton();">Technical Support</span>
+                     <br><br>
+                     <span>All Rights Reserved 2023.</span>
+                 </span>
+            </div>
+        </div>
+    </body>
+</html>
+
+<!--
+    ☰
+    <br><br>
+    <span class="font2"></span><br>
+    <span class="font4"></span>
+-->
